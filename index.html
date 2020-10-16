@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PParcialCharotti</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/funcion.js"></script>
+</head>
+<body>
+    <div class="spinner" id="idSpinner" hidden>
+        <img src="./img/Spinner-1s-800px.gif" alt="spinner" id="imgSpinner" class="imagen">
+    </div>
+    <header id="idContenedor" hidden > 
+        <div>
+            <input type="button" value="X" class="boton" id="btnCerrar">
+        </div>
+        <nav id="cuadro" class="cuadroC">
+            <label for="fname">Nombre</label><br>
+            <input type="text" class="SinError" id="fname" name="firstname"><br>
+            <label for="cuatri">Cuatrimestre</label>
+            <select id="idCuatri" name="cuatri" disabled>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br>
+            <label for="fecha">Fecha Final</label>
+            <input type="date" class="SinError" id="fecha"> <br>
+            <label for="turno">Turno</label><br>
+            <div class="radio">
+                <input type="radio" name="turno" value="mañana" id="mañana">
+                <label for="Mañana">Mañana</label><br>
+                <input type="radio" name="turno" value="mañana" id="noche">
+                <label for="Noche">Noche</label>
+            </div>
+            
+            <input type="button" value="Eliminar" class="boton" id="btnEliminar">
+            <input type="button" value="Modificar" class="boton" id="btnModificar">
+        </nav>
+    </header>
+    <section>
+        <table id="tabla">
+            <h2>Lista de materias</h2>
+            <thead>
+
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha final</th>
+                    <th>Turno</th>
+                </tr>
+            </thead>
+            <tbody id="tCuerpo">
+            </tbody>
+        </table>
+
+    </section>
+</main>
+<footer>
+</footer>
+</body>
+</html>
