@@ -164,15 +164,14 @@ function Modificar(e) {
                 httpPost.send(JSON.stringify(json));
             }
         } else {
-            document.getElementById("fname").className = "error";
+            document.getElementById("fname").className = "inputError";
             alert("Nombre deben tener mas de 6 caracteres");
-            fname.className = "inputError";
             return;
         }
         // fname.className="SinError";
     } else {
         alert("La fecha debe ser mayor al dia de hoy");
-        document.getElementById("fecha").className = "error";
+        document.getElementById("fecha").className = "inputError";
         return;
     }
 }
